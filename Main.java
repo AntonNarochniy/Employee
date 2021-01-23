@@ -2,6 +2,11 @@ public class Main {
 
     public static void main(String[] args) {
 
+        // В каком-то смысле, успех Java — это самое худшее, что когда-либо происходило со мной.
+        // - Джеймс Гослинг
+
+
+
 
         Specialist specIvanov = new Specialist("Иванов", 19, 1000, 1);
         Specialist specPetrov = new Specialist("Петров", 20, 2000, 2);
