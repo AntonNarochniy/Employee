@@ -2,6 +2,11 @@ public class Main {
 
     public static void main(String[] args) {
 
+        //„Интеллект — это способность избегать выполнения работы, но так, чтобы она при этом была сделана.“
+        // —  Линус Торвальдс
+
+
+
 
         Specialist specIvanov = new Specialist("Иванов", 19, 1000, 1);
         Specialist specPetrov = new Specialist("Петров", 20, 2000, 2);
