@@ -33,7 +33,12 @@ public class Specialist extends Employee {
                 '}';
     }
 
-    public void workWithClients(){
+    public void workWithClients() {
         System.out.println("Специалист: чем могу быть полезен?");
+    }
+
+    @Override
+    public void goToVacation() {
+        System.out.println("Отпуск проведу на работе, скоро запуск");
     }
 }

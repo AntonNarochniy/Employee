@@ -33,4 +33,9 @@ public class Developer extends Employee {
     public void writeCode(){
         System.out.println("Разработчик: Это не баг, это фича!");
     }
+
+    @Override
+    public void goToVacation() {
+        System.out.println("В отпуск буду заниматься ремонтом");
+    }
 }
