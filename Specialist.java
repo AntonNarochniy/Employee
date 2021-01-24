@@ -23,6 +23,15 @@ public class Specialist extends Employee {
         super.print();
     }
 
+    @Override
+    public String toString() {
+        return "Specialist{" +
+                "fio='" + fio + '\'' +
+                ", age=" + age +
+                ", salary=" + salary +
+                ", levels=" + levels +
+                '}';
+    }
 
     public void workWithClients(){
         System.out.println("Специалист: чем могу быть полезен?");
