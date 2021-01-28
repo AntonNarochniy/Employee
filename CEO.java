@@ -37,6 +37,8 @@ public class CEO extends Manager {
         System.out.println("Директор: Всем премия 300% от месячного оклада!");
     }
 
+    // ДЗ 23.1 переопределил класс goToDayOff()
+
     @Override
     public void goToDayOff() {
         System.out.println(getFio() + ": Я беру отгул");

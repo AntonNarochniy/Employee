@@ -36,6 +36,8 @@ public class Developer extends Employee {
         System.out.println("Разработчик: Это не баг, это фича!");
     }
 
+    // ДЗ 23.1 переопределил класс goToDayOff()
+
     @Override
     public void goToDayOff() {
         System.out.println(getFio() + ": Мне нужен отгул");

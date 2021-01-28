@@ -1,3 +1,4 @@
+// ДЗ 23.1  - сделал класс Emploee абстрактным
 public abstract class Employee<getClass> {
     String fio;
     int age;
@@ -48,6 +49,8 @@ public abstract class Employee<getClass> {
                 ", salary=" + salary +
                 '}';
     }
+
+    // ДЗ 23.1 добавил абстрактный класс goToDayOff()
 
     public abstract void goToDayOff();
 

@@ -30,6 +30,8 @@ public class Main {
 
         System.out.println();
 
+        // ДЗ 23.1 - добавил вызовы метода goToDayOff()
+
         specIvanov.goToDayOff();
         specPetrov.goToDayOff();
         specSidorov.goToDayOff();

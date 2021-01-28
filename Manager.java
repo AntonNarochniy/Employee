@@ -36,6 +36,7 @@ public class Manager extends Employee {
         System.out.println("Менеджер: Надо ускориться!");
     }
 
+    // ДЗ 23.1 переопределил класс goToDayOff()
 
     @Override
     public void goToDayOff() {
