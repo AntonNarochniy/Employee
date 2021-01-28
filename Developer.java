@@ -4,6 +4,7 @@ public class Developer extends Employee {
     public String getGrades() {
         return grades;
     }
+
     public void setGrades(String grades) {
         this.grades = grades;
     }
@@ -30,7 +31,13 @@ public class Developer extends Employee {
     public void print() {
         super.print();
     }
-    public void writeCode(){
+
+    public void writeCode() {
         System.out.println("Разработчик: Это не баг, это фича!");
+    }
+
+    @Override
+    public void goToDayOff() {
+        System.out.println(getFio() + ": Мне нужен отгул");
     }
 }

@@ -19,14 +19,27 @@ public class Main {
         devAndrey.print();
         devMichael.print();
         devMichael.writeCode();
-        Manager managerBarno = new Manager("Сагатова Барно", 31, 20000,  false);
-        Manager managerAnara = new Manager("Токталиева Анара", 30, 20000,  false);
+        Manager managerBarno = new Manager("Сагатова Барно", 31, 20000, false);
+        Manager managerAnara = new Manager("Токталиева Анара", 30, 20000, false);
         managerAnara.print();
         managerBarno.print();
         managerAnara.writeProcedures();
-        CEO ceoBoss = new CEO("Директоров Директрбек", 50, 2000000,  true, true);
+        CEO ceoBoss = new CEO("Директоров Директрбек", 50, 2000000, true, true);
         ceoBoss.print();
         ceoBoss.goPublic();
+
+        System.out.println();
+
+        specIvanov.goToDayOff();
+        specPetrov.goToDayOff();
+        specSidorov.goToDayOff();
+        devAibek.goToDayOff();
+        devAida.goToDayOff();
+        devMichael.goToDayOff();
+        devAndrey.goToDayOff();
+        managerAnara.goToDayOff();
+        managerBarno.goToDayOff();
+        ceoBoss.goToDayOff();
 
 
     }

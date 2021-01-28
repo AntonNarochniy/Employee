@@ -4,6 +4,7 @@ public class Manager extends Employee {
     public boolean isHasStocks() {
         return hasStocks;
     }
+
     public void setHasStocks(boolean hasStocks) {
         this.hasStocks = hasStocks;
     }
@@ -31,7 +32,13 @@ public class Manager extends Employee {
         super.print();
     }
 
-    public void writeProcedures(){
+    public void writeProcedures() {
         System.out.println("Менеджер: Надо ускориться!");
+    }
+
+
+    @Override
+    public void goToDayOff() {
+        System.out.println(getFio() + ": Завтра я беру отгул");
     }
 }

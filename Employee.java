@@ -1,4 +1,4 @@
-public class Employee {
+public abstract class Employee<getClass> {
     String fio;
     int age;
     int salary;
@@ -48,5 +48,8 @@ public class Employee {
                 ", salary=" + salary +
                 '}';
     }
+
+    public abstract void goToDayOff();
+
 
 }

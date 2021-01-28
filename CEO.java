@@ -4,11 +4,14 @@ public class CEO extends Manager {
     public boolean isHasCompanyCar() {
         return hasCompanyCar;
     }
+
     public void setHasCompanyCar(boolean hasCompanyCar) {
         this.hasCompanyCar = hasCompanyCar;
     }
+
     public CEO() {
     }
+
     public CEO(String fio, int age, int salary, boolean hasStocks, boolean hasCompanyCar) {
         super(fio, age, salary, hasStocks);
         this.hasCompanyCar = hasCompanyCar;
@@ -29,7 +32,13 @@ public class CEO extends Manager {
     public void print() {
         super.print();
     }
-    public void goPublic(){
+
+    public void goPublic() {
         System.out.println("Директор: Всем премия 300% от месячного оклада!");
+    }
+
+    @Override
+    public void goToDayOff() {
+        System.out.println(getFio() + ": Я беру отгул");
     }
 }
