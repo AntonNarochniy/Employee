@@ -1,6 +1,8 @@
-public class Main {
+import javax.sound.midi.Soundbank;
 
-    public static void main(String[] args) {
+public class Main implements Cloneable {
+
+    public static void main(String[] args) throws CloneNotSupportedException {
 
 
         Specialist specIvanov = new Specialist("Иванов", 19, 1000, 1);
@@ -43,8 +45,27 @@ public class Main {
         managerBarno.goToDayOff();
         ceoBoss.goToDayOff();
 
+        //создаю объект класса ObjectClone
+        ObjectClone clone1 = new ObjectClone("Клон Клонович", 20 , 20000);
+        // распечатываю его через toString()
+        System.out.println(clone1.toString());
+        // клонирую clone1 в объект клон clone2 метод clone() клонирует объект
+        ObjectClone clone2 = (ObjectClone) clone1.clone();
+        // распечатываю его через toString()
+        System.out.println(clone1.toString());
+
+
+
+
+
+
+
+
+
 
     }
+
+
 
 
 }
