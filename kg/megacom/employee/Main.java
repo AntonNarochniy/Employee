@@ -1,3 +1,10 @@
+package kg.megacom.employee;
+
+import kg.megacom.employee.childs.CEO;
+import kg.megacom.employee.childs.Developer;
+import kg.megacom.employee.childs.Manager;
+import kg.megacom.employee.childs.Specialist;
+
 public class Main {
 
     public static void main(String[] args) {

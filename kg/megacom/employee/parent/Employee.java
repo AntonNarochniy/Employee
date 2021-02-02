@@ -1,8 +1,10 @@
+package kg.megacom.employee.parent;
+
 // ДЗ 23.1  - сделал класс Emploee абстрактным
 public abstract class Employee<getClass> {
-    String fio;
-    int age;
-    int salary;
+    public String fio;
+    public int age;
+    public int salary;
 
     public String getFio() {
         return fio;

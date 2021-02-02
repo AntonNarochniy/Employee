@@ -1,3 +1,7 @@
+package kg.megacom.employee.childs;
+
+import kg.megacom.employee.parent.Employee;
+
 public class Specialist extends Employee {
     int levels;
 
