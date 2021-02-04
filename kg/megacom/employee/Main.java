@@ -17,10 +17,10 @@ public class Main {
         specPetrov.print();
         specSidorov.print();
         specIvanov.workWithClients();
-        Developer devAibek = new Developer("Курманалиев Айбек", 22, 10000, "junior");
-        Developer devAida = new Developer("Таласбаева Аида", 25, 20000, "middle");
-        Developer devAndrey = new Developer("Коробов Андрей", 30, 30000, "senior");
-        Developer devMichael = new Developer("Michael Katzman", 40, 80000, "senior");
+        Developer devAibek = new Developer("Курманалиев Айбек", 22, 10000, Grades.JUNIOR);
+        Developer devAida = new Developer("Таласбаева Аида", 25, 20000, Grades.MIDDLE);
+        Developer devAndrey = new Developer("Коробов Андрей", 30, 30000, Grades.SENIOR);
+        Developer devMichael = new Developer("Michael Katzman", 40, 80000, Grades.TEAMLEAD);
         devAibek.print();
         devAida.print();
         devAndrey.print();
@@ -49,8 +49,26 @@ public class Main {
         managerAnara.goToDayOff();
         managerBarno.goToDayOff();
         ceoBoss.goToDayOff();
+        System.out.println("\n \n");
+        printDeveloperGrade(devAibek);
+        printDeveloperGrade(devAida);
+        printDeveloperGrade(devAndrey);
+        printDeveloperGrade(devMichael);
 
 
+    }
+
+    static void printDeveloperGrade(Developer developer){
+        switch (developer.getGrades()){
+            case JUNIOR:
+            case MIDDLE:
+            case SENIOR:
+            case TEAMLEAD:
+                System.out.println(developer.getFio() + ": My grade is " + developer.getGrades());
+                break;
+            default:
+                System.out.println("Что то пошло не так");
+        }
     }
 
 

@@ -1,22 +1,23 @@
 package kg.megacom.employee.childs;
 
+import kg.megacom.employee.Grades;
 import kg.megacom.employee.parent.Employee;
 
 public class Developer extends Employee {
-    private String grades;
+    private Grades grades;
 
-    public String getGrades() {
+    public Grades getGrades() {
         return grades;
     }
 
-    public void setGrades(String grades) {
+    public void setGrades(Grades grades) {
         this.grades = grades;
     }
 
     public Developer() {
     }
 
-    public Developer(String fio, int age, int salary, String grades) {
+    public Developer(String fio, int age, int salary, Grades grades) {
         super(fio, age, salary);
         this.grades = grades;
     }
