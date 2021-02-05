@@ -58,16 +58,4 @@ public class Developer extends Employee {
     }
 
 
-    public static void printDeveloperGrade(Developer developer){
-        switch (developer.getGrades()){
-            case JUNIOR:
-            case MIDDLE:
-            case SENIOR:
-            case TEAMLEAD:
-                System.out.println(developer.getFio() + ": My grade is " + developer.getGrades());
-                break;
-            default:
-                System.out.println("Что то пошло не так");
-        }
-    }
 }
