@@ -5,6 +5,15 @@ import kg.megacom.employee.parent.Employee;
 
 public class Developer extends Employee {
     private Grades grades;
+    private String phrase;
+
+
+
+    public Developer(String fio, int age, int salary, Grades grades, String phrase) {
+        super(fio, age, salary);
+        this.grades = grades;
+        this.phrase = phrase;
+    }
 
     public Grades getGrades() {
         return grades;
@@ -46,5 +55,19 @@ public class Developer extends Employee {
     @Override
     public void goToDayOff() {
         System.out.println(getFio() + ": Мне нужен отгул");
+    }
+
+
+    public static void printDeveloperGrade(Developer developer){
+        switch (developer.getGrades()){
+            case JUNIOR:
+            case MIDDLE:
+            case SENIOR:
+            case TEAMLEAD:
+                System.out.println(developer.getFio() + ": My grade is " + developer.getGrades());
+                break;
+            default:
+                System.out.println("Что то пошло не так");
+        }
     }
 }

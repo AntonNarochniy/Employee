@@ -50,26 +50,22 @@ public class Main {
         managerBarno.goToDayOff();
         ceoBoss.goToDayOff();
         System.out.println("\n \n");
-        printDeveloperGrade(devAibek);
-        printDeveloperGrade(devAida);
-        printDeveloperGrade(devAndrey);
-        printDeveloperGrade(devMichael);
+
+        //ДЗ 28.1  распечатал поле phrase при помощи цикла и метода printPhrase()
+            for (Grades g : Grades.values()) {
+                g.printPhrase();
+            }
 
 
-    }
 
-    static void printDeveloperGrade(Developer developer){
-        switch (developer.getGrades()){
-            case JUNIOR:
-            case MIDDLE:
-            case SENIOR:
-            case TEAMLEAD:
-                System.out.println(developer.getFio() + ": My grade is " + developer.getGrades());
-                break;
-            default:
-                System.out.println("Что то пошло не так");
-        }
+
+
+
+
     }
 
 
 }
+
+
+
